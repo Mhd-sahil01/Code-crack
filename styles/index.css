@@ -12,12 +12,10 @@ body {
 
 .main-box {
     background-color: #FEFAE0;
-    width: 60%;
-    height: 80vh;
-    margin-top: 4rem;
+    margin-top: 4rem !important;
     border-radius: 1rem;
     box-shadow: 0px 0px 12px #B99470;
-
+    padding: 1rem;
 }
 
 .btn-box {
@@ -25,7 +23,7 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .head-text {
@@ -33,7 +31,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0.2rem;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     color: #B99470;
 }
 
@@ -57,7 +55,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 2rem 1.5rem 0 1.5rem;   
-    background-color:	#F5F0C9;
+    background-color:#F5F0C9;
     padding: 1rem 1rem 0 1rem;
     border-radius: 1rem;
 }
@@ -71,5 +69,3 @@ body {
     color: #996C45;
     font-size: 1.1rem;
 }
-
-  

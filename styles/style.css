@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #FFF2F2;
+    background-color: #7886C7 !important;
 }
 
 .container{
@@ -15,7 +15,6 @@ body{
     justify-content: center;
     align-items: center;
     gap: 0.2rem;
-    padding: 1rem 0;
     color: #2D336B;
 }
 
@@ -24,10 +23,47 @@ body{
 }
 
 .main-box{
-    background-color: #A9B5DF;
-    width: 60%;
-    height: 80vh;
-    margin-top: 4rem;
+    background-color: #FCECEC;
+    padding: 1.2rem;
+    margin-top: 4rem !important;
     border-radius: 1rem;
     box-shadow: 0px 0px 12px #2D336B;
+}
+
+.question{
+    padding: 0 1rem !important;
+}
+
+.options{
+    padding: 0.5rem 1.5rem 0.5rem 0;
+    font-size: large;
+    margin-top: 2rem !important;
+}
+
+.options ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.options ul button{
+    padding: 3px 0;
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    background-color: #A9B5DF;
+    color: #2D336B;
+}
+
+.correct-ans{
+    font-weight: bold !important;
+}
+
+.high-score{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    margin-left: 1rem !important;
 }
