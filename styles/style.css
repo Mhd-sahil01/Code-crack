@@ -24,20 +24,24 @@ body{
 
 .main-box{
     background-color: #FCECEC;
-    padding: 1.2rem;
-    margin-top: 4rem !important;
+    padding: 1rem;
+    height: 73vh;
+    width: 55%;
+    margin: auto;
+    margin-top: 5rem;
     border-radius: 1rem;
     box-shadow: 0px 0px 12px #2D336B;
 }
 
 .question{
     padding: 0 1rem !important;
+    line-height: 2;
 }
 
 .options{
     padding: 0.5rem 1.5rem 0.5rem 0;
     font-size: large;
-    margin-top: 2rem !important;
+    margin-top: 2rem;
 }
 
 .options ul {
@@ -57,13 +61,51 @@ body{
     color: #2D336B;
 }
 
-.correct-ans{
-    font-weight: bold !important;
-}
-
 .high-score{
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 0;
     margin-left: 1rem !important;
+}
+
+.green {
+    background-color: green !important;
+    color: white !important;
+}
+
+.red{
+    background-color: red !important;
+    color: white !important;
+}
+
+.display{
+    display: none;
+}
+
+.option-correct{
+    text-align: center;
+    width: 100%;
+    line-height: 2.1;
+}
+
+.correctFlash {
+    background-color: #BFFCC6;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.goBack{
+    text-align: center;
+}
+
+.goBackBtn{
+    border: none;
+    background-color: #2D336B;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    opacity: 0.8;
+}
+.goBackBtn:hover{
+    opacity: 1;
 }
