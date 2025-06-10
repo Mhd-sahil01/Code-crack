@@ -97,7 +97,6 @@ export function mainFunction(list) {
         //move to the next question (if false)
         function nextQuestionFalse() {
             setTimeout(() => {
-                score--;
                 questionNum++;
                 displayQuest(list);
             }, 1000);

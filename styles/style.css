@@ -1,10 +1,11 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: #7886C7 !important;
+    text-align: center;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +23,7 @@ body{
     font-size: 1.5rem;
 }
 
-.main-box{
+.main-box {
     background-color: #FCECEC;
     padding: 1rem;
     height: 73vh;
@@ -33,12 +34,12 @@ body{
     box-shadow: 0px 0px 12px #2D336B;
 }
 
-.question{
+.question {
     padding: 0 1rem !important;
     line-height: 2;
 }
 
-.options{
+.options {
     padding: 0.5rem 1.5rem 0.5rem 0;
     font-size: large;
     margin-top: 2rem;
@@ -52,7 +53,7 @@ body{
     list-style: none;
 }
 
-.options ul button{
+.options ul button {
     padding: 3px 0;
     width: 100%;
     border: none;
@@ -61,11 +62,12 @@ body{
     color: #2D336B;
 }
 
-.high-score{
+.high-score {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     padding: 0.5rem 0;
-    margin-left: 1rem !important;
+    margin-right: 1rem;
 }
 
 .green {
@@ -73,16 +75,16 @@ body{
     color: white !important;
 }
 
-.red{
+.red {
     background-color: red !important;
     color: white !important;
 }
 
-.display{
+.display {
     display: none;
 }
 
-.option-correct{
+.option-correct {
     text-align: center;
     width: 100%;
     line-height: 2.1;
@@ -94,11 +96,11 @@ body{
     border-radius: 1rem;
 }
 
-.goBack{
+.goBack {
     text-align: center;
 }
 
-.goBackBtn{
+.goBackBtn {
     border: none;
     background-color: #2D336B;
     color: white;
@@ -106,6 +108,30 @@ body{
     padding: 0.5rem;
     opacity: 0.8;
 }
-.goBackBtn:hover{
+
+.goBackBtn:hover {
     opacity: 1;
+}
+
+@media (max-width : 600px) {
+    .main-box {
+        width: 80%;
+        height: 60%;
+    }
+    .high-score{
+        justify-content: space-between;
+    }
+    .score-txt {
+        font-size: smaller;
+    }
+
+    .show-score {
+        font-size: small;
+    }
+    .option-correct{
+        padding: 0.5rem;
+    }
+    .correct-ans{
+        font-size: small;
+    }
 }

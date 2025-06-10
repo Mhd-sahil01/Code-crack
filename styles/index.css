@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #C0C78C !important;
+    text-align: center;
 }
 
 .container {
@@ -68,4 +69,24 @@ body {
 .footer-text {
     color: #996C45;
     font-size: 1.1rem;
+}
+
+
+@media (max-width : 600px) {
+    .main-box {
+        width: 80%;
+        height: 60%;
+    }
+
+    .footer-head{
+        font-size: small;
+    }
+
+    .footer{
+        padding-top: 0.5rem;
+    }
+
+    .footer-text{
+        font-size: small;
+    }
 }
