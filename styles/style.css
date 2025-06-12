@@ -58,11 +58,6 @@ body {
     color: #2D336B;
 }
 
-.options ul button:hover {
-    background-color: #4960b7 !important;
-    color: white !important;
-}
-
 .high-score {
     display: flex;
     justify-content: space-between;
