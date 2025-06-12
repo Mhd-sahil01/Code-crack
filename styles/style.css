@@ -2,13 +2,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: #7886C7 !important;
-    text-align: center;
 }
 
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .head-text {
@@ -26,10 +26,6 @@ body {
 .main-box {
     background-color: #FCECEC;
     padding: 1rem;
-    height: 73vh;
-    width: 55%;
-    margin: auto;
-    margin-top: 5rem;
     border-radius: 1rem;
     box-shadow: 0px 0px 12px #2D336B;
 }
@@ -54,20 +50,24 @@ body {
 }
 
 .options ul button {
-    padding: 3px 0;
-    width: 100%;
+    padding: 3px 0.5rem;
+    width: 80%;
     border: none;
     border-radius: 1rem;
     background-color: #A9B5DF;
     color: #2D336B;
 }
 
+.options ul button:hover {
+    background-color: #4960b7 !important;
+    color: white !important;
+}
+
 .high-score {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 0;
-    margin-right: 1rem;
+    padding: 0.5rem 0.2rem;
 }
 
 .green {
@@ -85,19 +85,20 @@ body {
 }
 
 .option-correct {
-    text-align: center;
+    background-color: #BFFCC6;
+    border: 1px solid black;
+    padding: 0.2rem;
     width: 100%;
-    line-height: 2.1;
+    border-radius: 8px;
 }
-
 .correctFlash {
     background-color: #BFFCC6;
-    padding: 0.5rem;
-    border-radius: 1rem;
+    border-radius: 8px;
 }
 
 .goBack {
     text-align: center;
+    margin-top: 1rem;
 }
 
 .goBackBtn {
@@ -113,25 +114,26 @@ body {
     opacity: 1;
 }
 
-@media (max-width : 600px) {
+@media (min-width : 601px) and (max-width: 1000px){
     .main-box {
-        width: 80%;
-        height: 60%;
+        height: 80vh;
+        width: 50vw;
     }
-    .high-score{
-        justify-content: space-between;
+}
+
+@media (min-width: 1000px) {
+    .main-box {
+        height: 75vh;
+        width: 50vw;
     }
+}
+
+@media (max-width : 600px) {
     .score-txt {
         font-size: smaller;
     }
 
     .show-score {
-        font-size: small;
-    }
-    .option-correct{
-        padding: 0.5rem;
-    }
-    .correct-ans{
         font-size: small;
     }
 }

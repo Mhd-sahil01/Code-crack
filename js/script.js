@@ -25,6 +25,7 @@ export function mainFunction(list) {
     let question = document.querySelector(".question");
     let options = document.querySelector(".options");
     let goBackBtn = document.querySelector(".goBackBtn"); //go back button
+    let correctAns = document.querySelector(".correct-ans");
 
     //display the questions and options
     function displayQuest() {
@@ -51,11 +52,9 @@ export function mainFunction(list) {
             //match the answer with the original answer
             function checkAnswer(answer, btn) {
                 if (answer == list[questionNum].answer) {
-                    console.log("corret");
                     greenFlash(btn);
                     nextQuestionTrue();
                 } else {
-                    console.log("wrong");
                     redFlash(btn);
                     nextQuestionFalse();
                 }
@@ -69,20 +68,19 @@ export function mainFunction(list) {
             btn.classList.add("green");
             setTimeout(() => {
                 btn.classList.remove("green");
-            }, 500);
+            }, 1000);
         }
 
         // red flash for wrong answer
         function redFlash(btn) {
             btn.classList.add("red");
-            let correctAns = document.querySelector(".correct-ans");
             correctAns.classList.add("correctFlash");
-            correctAns.innerHTML = `<b>correct answer: &nbsp;</b> ${list[questionNum].answer}`
+            correctAns.innerHTML = `<marquee scrollamount="7" direction="down"><b>correct answer: &nbsp;</b> ${list[questionNum].answer}</marquee>`
             setTimeout(() => {
                 btn.classList.remove("red");
                 correctAns.innerHTML = "";
                 correctAns.classList.remove("correctFlash");
-            }, 500);
+            }, 1000);
         }
 
         //move to the next question (if true)
@@ -91,7 +89,7 @@ export function mainFunction(list) {
                 score++;
                 questionNum++;
                 displayQuest(list);
-            }, 1000);
+            }, 1300);
         }
 
         //move to the next question (if false)
@@ -99,12 +97,12 @@ export function mainFunction(list) {
             setTimeout(() => {
                 questionNum++;
                 displayQuest(list);
-            }, 1000);
+            }, 1300);
         }
 
         //update the score
         let showScore = document.querySelector(".show-score");
-        showScore.innerHTML = `your score is ${score} <i class="fa-solid fa-trophy" style="color: #FFD700; font-size: 1rem;"></i>`
+        showScore.innerHTML = `your score is ${score}/20 <i class="fa-solid fa-trophy" style="color: #FFD700; font-size: 1rem;"></i>`
 
     }
 }
