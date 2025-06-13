@@ -25,7 +25,7 @@ body {
 
 .main-box {
     background-color: #FCECEC;
-    padding: 1rem;
+    padding: 0.7rem;
     border-radius: 1rem;
     box-shadow: 0px 0px 12px #2D336B;
 }
@@ -80,15 +80,17 @@ body {
 }
 
 .option-correct {
-    background-color: #BFFCC6;
-    border: 1px solid black;
-    padding: 0.2rem;
-    width: 100%;
-    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.correctFlash {
-    background-color: #BFFCC6;
-    border-radius: 8px;
+
+.correct-ans {
+    display: none;
+}
+
+.displayCorret {
+    display: inline;
 }
 
 .goBack {
@@ -109,7 +111,7 @@ body {
     opacity: 1;
 }
 
-@media (min-width : 601px) and (max-width: 1000px){
+@media (min-width : 601px) and (max-width: 1000px) {
     .main-box {
         height: 80vh;
         width: 50vw;

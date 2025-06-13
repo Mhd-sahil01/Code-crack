@@ -74,12 +74,12 @@ export function mainFunction(list) {
         // red flash for wrong answer
         function redFlash(btn) {
             btn.classList.add("red");
-            correctAns.classList.add("correctFlash");
-            correctAns.innerHTML = `<marquee scrollamount="7" direction="down"><b>correct answer: &nbsp;</b> ${list[questionNum].answer}</marquee>`
+            correctAns.classList.add("displayCorret");
+            correctAns.innerHTML = `<b>correct answer: &nbsp;</b> ${list[questionNum].answer}`
             setTimeout(() => {
                 btn.classList.remove("red");
                 correctAns.innerHTML = "";
-                correctAns.classList.remove("correctFlash");
+                correctAns.classList.remove("displayCorret");
             }, 1000);
         }
 
